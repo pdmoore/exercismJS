@@ -2,7 +2,7 @@
 function Year(year) {
     this.year = year;
     this.isLeap = function() {
-        return false;
+        return ((year % 4) == 0);
     }
 }
 
