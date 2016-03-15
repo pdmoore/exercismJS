@@ -1,10 +1,11 @@
 function Hamming() {
     this.compute = function(left, right) {
-        if (left === right ) {
-            return 0;
-        } else { 
-            return 1;
+        var count = 0;
+        for (i = 0; i < left.length; i++) {
+            if (left.charAt(i) !== right.charAt(i)) count++;
         }
+
+        return count;
     }
 }
 
