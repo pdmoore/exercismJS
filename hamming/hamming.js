@@ -1,6 +1,10 @@
 function Hamming() {
     this.compute = function(left, right) {
-        return 0;
+        if (left === right ) {
+            return 0;
+        } else { 
+            return 1;
+        }
     }
 }
 
